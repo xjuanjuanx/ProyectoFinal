@@ -13,14 +13,9 @@ class Conexion(object):
                 db = "crudpython_db" #base de datos a la cual nos conectamos
             )
         except Error as ex:
-            print(f"Error al realizar la conexion:\n {ex}")
+            return(f"Error al realizar la conexion:\n {ex}")
         
-        else:
-            pass
-            #print("Conexion Exitosa Yupi!!")
-#_____________________________________________________________________________________________________
-#probar la conexion
-#conexion = Conexion()
+
 
 
 
