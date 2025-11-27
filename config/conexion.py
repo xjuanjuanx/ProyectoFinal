@@ -13,10 +13,11 @@ class Conexion(object):
                 db = "crudpython_db" #base de datos a la cual nos conectamos
             )
         except Error as ex:
-            return(f"Error al realizar la conexion:\n {ex}")
+            return f"Error al realizar la conexion:\n {ex}"
         
 
 
 
 
     
+
