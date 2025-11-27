@@ -1,10 +1,12 @@
 from models.DAOProducto import DOAProducto
 from mysql.connector import *
 from controllers.funcionesProducto import *
+import os
 
 def menuPrincipal():
     continuar = True
     while continuar:
+        os.system("cls")
         opcionCorrecta = False
         while not opcionCorrecta:
             print("===========MENU PRINCIPAL===========")
@@ -30,9 +32,9 @@ def menuPrincipal():
                 ejecutar(opc)
                 input("Precione una tecla para continuar")
             elif opc == 5:
-                opcionCorrecta = True
+                continuar = False
+                input("Gracias por usar el programa")
                 break
-                input("Precione una tecla para continuar")
             
 def ejecutar(opc):
     daoProducto = DOAProducto()
